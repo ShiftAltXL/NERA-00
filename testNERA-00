@@ -32,7 +32,7 @@ model = tf.keras.Sequential([
                              Dropout(0.2),
                              Dense(1)
 ])
-model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logist=True), metrics=['accuracy'])
+model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logits=True), metrics=['accuracy'])
 
 model.fit(train_batches, epochs=1)
 
