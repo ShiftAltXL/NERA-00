@@ -1,6 +1,7 @@
 !pip install tensorflow
 !pip install tensorflow_datasets
 !pip install numpy
+!pip install matplotlib
 
 import numpy as np
 import tensorflow as tf
@@ -49,4 +50,4 @@ for i in images:
   plt.figure()
   plt.imshow(img)
   label = 'Собака' if prediction > 0 else 'Кошка'
-  plt.title('{}'.format(prediction))
+  plt.title('{}'.format(label))
